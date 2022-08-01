@@ -1,0 +1,381 @@
+ul li {
+    list-style: none;
+    margin: 0 auto;
+    border-left: 2px solid rgb(10, 194, 56);
+    display: inline-block;
+    padding: 0 30px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    font-family: arvo;
+    font-size: x-large;
+}
+
+li a {
+    color: black;
+}
+
+li a:hover {
+    color: rgb(10, 194, 56);
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding-left: 0;
+    left: 0;
+    display: none;
+    background: white;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    min-width: 250px;
+    text-align: left;
+    padding-top: 20px;
+    box-shadow: 0px 3px 5px -1px #ccc;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    border-style: none;
+}
+
+ul li ul li a:hover {
+    padding-left: 10px;
+    border-left: 2px solid rgb(10, 194, 56);
+    transition: all 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li ul li a {
+    transition: all 0.5s ease;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-left: 35px;
+}
+
+.midle-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.items {
+    margin-left: 40px;
+}
+
+.sign {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sign-button {
+    background-color: rgb(227, 227, 227);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    transition: padding 0.15s, margin 0.15s;
+}
+
+.sign-button:hover {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #74d68e;
+}
+
+#quantityplus-butt {
+    background-color: rgb(227, 227, 227);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    transition: padding 0.15s, margin 0.15s;
+}
+#quantityplus-butt:hover {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #74d68e;
+}
+
+#quantitymoin-butt {
+    background-color: rgb(227, 227, 227);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    transition: padding 0.15s, margin 0.15s;
+}
+
+#quantitymoin-butt:hover {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #ff3939;
+}
+
+#counter {
+    margin-left: 56px;
+    font-size: larger;
+}
+.midle-nav,
+.information {
+    font-family: Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+}
+
+.product-picture {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.apply-button {
+    background-color: rgb(10, 194, 56);
+    color: white;
+    border: none;
+    height: 40px;
+    width: 240px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    align-content: center;
+    transition: background-color 0.35s;
+}
+
+.reviews {
+    color: rgb(10, 194, 56);
+}
+
+.apply-button:hover {
+    background-color: rgb(2, 138, 29);
+}
+#blacky {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #000000;
+    border-radius: 20px;
+    color: white;
+}
+#redy {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #ff0000;
+    border-radius: 20px;
+    color: white;
+    border: #ff0000;
+}
+.main {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.size {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: large;
+}
+
+.big {
+    width: 3em;
+    height: 3em;
+}
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.list-choice {
+    width: 300px;
+    margin: 1em auto;
+    position: relative;
+    cursor: pointer;
+}
+.list-choice input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.list-choice-title {
+    width: 100%;
+    display: block;
+    background: #d8d8d8;
+    text-align: center;
+    padding: 0.55em 1em;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 1px 0 #cacaca;
+    border-radius: 0.2em;
+}
+.list-choice:hover .list-choice-title {
+    border-radius: 0.2em 0.2em 0 0;
+}
+.list-choice-objects label:nth-last-of-type(1) span {
+    border-radius: 0 0 0.2em 0.2em;
+}
+.list-choice input[type="radio"] + span {
+    color: #fff;
+    background: #d8d8d8;
+    padding: 0.55em 1em;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+}
+.list-choice-objects {
+    position: absolute;
+    top: 0;
+    padding-top: 2.1em;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 250ms ease;
+}
+.list-choice:hover .list-choice-objects input[type="radio"] + span {
+    position: relative;
+    top: 0;
+    transition: all 250ms ease-in-out;
+}
+.list-choice:hover input[type="radio"] + span:hover {
+    background: #bbb;
+}
+.list-choice:hover input[type="radio"]:checked + span:hover {
+    background: #74d68e;
+}
+.list-choice input[type="radio"]:checked + span {
+    background: #74d68e;
+    position: absolute;
+    top: 0em;
+    border-radius: 0.2em;
+}
+.list-choice:hover input[type="radio"]:checked + span {
+    border-radius: 0;
+}
+.list-choice:hover
+    .list-choice-objects
+    label:nth-last-of-type(1)
+    input[type="radio"]:checked
+    + span {
+    border-radius: 0 0 0.2em 0.2em;
+}
+
+.list-choice:hover .list-choice-objects {
+    max-height: 540px;
+}
+
+.description1 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description2 {
+    margin-top: 60px;
+    margin-left: 400px;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+
+.notification-icon {
+    position: relative;
+}
+
+#notificationcount {
+    position: absolute;
+    top: 0px;
+    right: 4px;
+    background-color: #ff3939;
+    color: white;
+    font-size: 13px;
+    padding-left: 6px;
+    padding-top: 2px;
+    padding-right: 6px;
+    padding-bottom: 2px;
+    border-radius: 12px;
+}
